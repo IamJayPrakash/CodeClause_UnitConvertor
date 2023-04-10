@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Conversion</title>
+        <!-- link css -->
+        <link rel="stylesheet" type="text/css" href="stylepro.css">
+        <!-- gooogle fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap"
+            rel="stylesheet">
+        <!-- bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <!-- font awsome -->
+        <script src="https://kit.fontawesome.com/33c005a0aa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--time Conversion-->
+
+        <div class="len-heading">
+            <p>
+                <i class="fa-solid fa-clock fa-spin" style="color: #dfe4ec;"></i>
+                Time Convertor</p>
+        </div>
+        <!-- formsection -->
+        <div class="length-box target ">
+            <main>
+                <form>
+                    <input type="number" id="input" name="input" placeholder="Input">
+                    <select id="inputType">
+                        <option value="hour">
+                            Hours (hr)</option>
+                        <option value="minute">Minutes (min)</option>
+                        <option value="second">Seconds (sec)</option>
+                    </select>
+
+                    <input
+                        type="number"
+                        id="result"
+                        name="output"
+                        disabled="disabled"
+                        placeholder="Result">
+                    <select id="resultType">
+                        <option value="hour">
+                            Hours (hr)</option>
+                        <option value="minute">Minutes (min)</option>
+                        <option value="second">Seconds (sec)</option>
+                    </select>
+                    <!-- <br> <button type="button" id="convert" class="btn btn-outline-info btn-lg
+                    d-grid gap-2 col-6 mx-auto">Convert</button> -->
+                </form>
+            </main>
+        </div>
+
+        <!-- javascript -->
+
+        <script src="time.js"></script>
+        <!-- home button -->
+        <div class="back-btn">
+            <a
+                class="btn btn-outline-dark"
+                href="D:\WebDevelopment\CodeClasueInternship\Task1UnitConvertor\index.html"
+                role="button">
+                <i class="fa-solid fa-house fa-beat-fade" style="color: #00faf6;"></i>
+                Home</a>
+        </div>
+        <br>
+        <br>
+        <!-- foooter section -->
+        <div class="foot">
+            <footer class="footer-section">
+                <div class="   align-middle">
+
+                    <footer id="footer1">
+
+                        <a href="https://twitter.com/jayprak56111945" style="color: #ffff;">
+                            <i class=" target share-icon  fa-brands fa-square-twitter"></i>
+                        </a>
+                        <a href="" style="color: #ffff;">
+                            <i class=" target share-icon  fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="" style="color: #ffff;">
+                            <i class="target share-icon fa-solid fa-envelope"></i>
+                        </a>
+
+                        <a href="https://github.com/IamJayPrakash">
+                            <i class="target share-icon fa-brands fa-github" style="color: #ffffff;"></i>
+                        </a>
+
+                    </footer>
+
+                    <p class=" .fs-6 fst-italic font-monospace" style="text-align:center">copyright©️ 2024, All Right Reserved
+                        <br>Jay Prakash</p>
+
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
