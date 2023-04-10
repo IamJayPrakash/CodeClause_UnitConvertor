@@ -42,6 +42,7 @@ body {
     position: absolute;
     border-radius: 50%;
 }
+
 a:link,
 a:visited {
     background-color: transparent;
@@ -49,7 +50,6 @@ a:visited {
     font-size: 32px;
     font-weight: 500;
     line-height: 42px;
-    padding-top: 70px;
     text-align: center;
     color: #ffffff;
     outline: none;
@@ -72,23 +72,19 @@ a:hover {
 }
 
 .main-card {
-
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    margin: 20px;
-    padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 80px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 2.5rem;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .main-card1 {
 
     display: flex;
     flex-direction: row;
-    padding: 50px;
-    margin: 0 20px 20px;
+    margin: 0 auto
 }
 
 .main-card2 {
@@ -96,7 +92,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     padding: 50px;
-    margin: 0 20px 20px;
 
 }
 
@@ -110,13 +105,12 @@ h1 {
 .card1 {
     position: relative;
     margin: 0;
-    width: 300px;
+    width: 200px;
     height: 200px;
     border-radius: 30px;
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
     text-align: center;
     background: linear-gradient(0deg, black, rgb(44,43,43));
 }
@@ -124,15 +118,27 @@ h1 {
 .card2 {
     position: relative;
     margin: 0;
-    width: 300px;
+    width: 200px;
     height: 200px;
     border-radius: 30px;
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
     text-align: center;
     background: linear-gradient(0deg, black, rgb(44,43,43));
+}
+.card1 a , .card2 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.card1 i , .card2 i{
+    font-size: 1.5rem;
 }
 
 .footer-section {
@@ -160,4 +166,22 @@ h1 {
     padding:1%;
     margin: 20px 10px;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .main-card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-card{
+        grid-template-columns: 1fr;
+    }
+    .uhead{
+        font-size: 2.5rem;
+    }
+    .choose-heading{
+        font-size: 1rem;
+    }
 }
