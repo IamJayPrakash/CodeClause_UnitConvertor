@@ -152,7 +152,7 @@ h1 {
     transform:  scale(1);
   }
 .target:hover {
-    transform: scale(1.1); /* Only the value of scale() changed */
+    transform:  scale(1.1); /* Only the value of scale() changed */
   }
   /* <!-- Footer --> */
 
