@@ -72,3 +72,24 @@ input {
     margin: 20px 10px;
     font-size: 2rem;
 }
+
+@media all and (min-width:481px) and (max-width:768px){
+    .len-heading{
+        width: 100%;
+    }
+    .length-box{
+        
+        width: 95%;
+        height: 220px;
+        margin: auto;
+    }
+    input{
+        width: 80%;
+    }
+    #resultType{
+        width: 80%;
+    }
+    #inputType{
+        width: 80%;
+    }
+}
